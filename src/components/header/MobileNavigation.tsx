@@ -17,6 +17,7 @@ interface MobileNavigationProps {
   animationTools: { name: string; url: string }[];
   soundTools: { name: string; url: string }[];
   lipsyncTools: { name: string; url: string }[];
+  editingTools: { name: string; url: string }[];
   onToggleMenu: () => void;
 }
 
@@ -26,6 +27,7 @@ export default function MobileNavigation({
   animationTools,
   soundTools,
   lipsyncTools,
+  editingTools,
   onToggleMenu,
 }: MobileNavigationProps) {
   const [toolsOpen, setToolsOpen] = useState(false);
@@ -62,7 +64,7 @@ export default function MobileNavigation({
           )}
         </Link>
         
-        <Link to="/select-version" onClick={onToggleMenu} className="animate-fade-in" style={{animationDelay: '50ms'}}>
+        <Link to="/select-version" target="_blank" rel="noopener noreferrer" onClick={onToggleMenu} className="animate-fade-in" style={{animationDelay: '50ms'}}>
           <Button 
             size="sm" 
             variant="default" 
@@ -125,6 +127,7 @@ export default function MobileNavigation({
                 animationTools={animationTools} 
                 soundTools={soundTools} 
                 lipsyncTools={lipsyncTools}
+                editingTools={editingTools}
                 isMobile={true} 
                 onItemClick={onToggleMenu} 
               />

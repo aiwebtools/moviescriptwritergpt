@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import { Menu, Film } from "lucide-react";
 import DesktopNavigation from "./header/DesktopNavigation";
 import MobileNavigation from "./header/MobileNavigation";
-import { animationTools, soundTools, lipsyncTools } from "@/data/tools";
+import { animationTools, soundTools, lipsyncTools, editingTools } from "@/data/tools";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -74,7 +74,12 @@ export default function Header() {
         </div>
         
         <div className="hidden md:block">
-          <DesktopNavigation animationTools={animationTools} soundTools={soundTools} lipsyncTools={lipsyncTools} />
+          <DesktopNavigation 
+            animationTools={animationTools} 
+            soundTools={soundTools} 
+            lipsyncTools={lipsyncTools} 
+            editingTools={editingTools} 
+          />
         </div>
       </div>
       
@@ -84,6 +89,7 @@ export default function Header() {
         animationTools={animationTools} 
         soundTools={soundTools} 
         lipsyncTools={lipsyncTools}
+        editingTools={editingTools}
         onToggleMenu={toggleMobileMenu} 
       />
     </header>

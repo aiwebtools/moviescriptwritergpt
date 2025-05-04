@@ -14,9 +14,10 @@ interface DesktopNavigationProps {
   animationTools: { name: string; url: string }[];
   soundTools: { name: string; url: string }[];
   lipsyncTools: { name: string; url: string }[];
+  editingTools: { name: string; url: string }[];
 }
 
-export default function DesktopNavigation({ animationTools, soundTools, lipsyncTools }: DesktopNavigationProps) {
+export default function DesktopNavigation({ animationTools, soundTools, lipsyncTools, editingTools }: DesktopNavigationProps) {
   const location = useLocation();
   
   // Determine if a route is active
@@ -40,7 +41,7 @@ export default function DesktopNavigation({ animationTools, soundTools, lipsyncT
         )}
       </Link>
       
-      <Link to="/select-version">
+      <Link to="/select-version" target="_blank" rel="noopener noreferrer">
         <Button 
           size="sm" 
           variant="default" 
@@ -93,7 +94,12 @@ export default function DesktopNavigation({ animationTools, soundTools, lipsyncT
           className="w-72 bg-script-bg border border-white/10 text-white shadow-lg animate-fade-in"
           sideOffset={8}
         >
-          <AnimationSoundTools animationTools={animationTools} soundTools={soundTools} lipsyncTools={lipsyncTools} />
+          <AnimationSoundTools 
+            animationTools={animationTools} 
+            soundTools={soundTools} 
+            lipsyncTools={lipsyncTools}
+            editingTools={editingTools}
+          />
         </DropdownMenuContent>
       </DropdownMenu>
       
