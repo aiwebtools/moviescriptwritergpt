@@ -42,7 +42,7 @@ export default function Footer() {
             </div>
 
             <div className="col-span-1">
-              <h3 className="font-semibold mb-3 md:mb-4 text-white text-sm sm:text-base">Writing Tools</h3>
+              <h3 className="font-semibold mb-3 md:mb-4 text-white text-sm sm:text-base">AI Writing & Image Creation</h3>
               <div className="grid grid-cols-1 gap-2.5">
                 <a 
                   href="https://chatgpt.com/g/g-35psQsJil-movie-script-writer-gpt-original-version-1" 
