@@ -6,7 +6,7 @@ interface HeroContentProps {
 export const HeroContent = ({ loaded }: HeroContentProps) => {
   return (
     <div className={`transition-all duration-700 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-      <span className="inline-block px-3 py-1 text-xs font-medium bg-script-accent/20 text-script-accent rounded-full mb-3 md:mb-4">
+      <span className="inline-block px-3 py-1 text-xs font-medium bg-script-accent/20 text-script-accent rounded-full mb-2 md:mb-3">
         Industry Standard AI Script Writing
       </span>
       <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-display mb-3 md:mb-4 tracking-tight glow-text">

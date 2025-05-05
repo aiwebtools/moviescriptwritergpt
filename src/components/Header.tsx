@@ -31,7 +31,7 @@ export default function Header() {
 
   return (
     <header className={cn(
-      "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-4 md:px-8",
+      "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-2 md:py-4 px-4 md:px-8",
       isScrolled 
         ? isFacebookBrowser 
           ? "bg-script-bg border-b border-white/5" 
@@ -41,7 +41,7 @@ export default function Header() {
           : "bg-transparent"
     )}>
       <div className="container mx-auto flex flex-col">
-        <div className="flex items-center justify-between mb-3">
+        <div className="flex items-center justify-between mb-2 md:mb-3">
           <div className="flex items-center">
             <Film className="h-6 w-6 text-script-accent mr-2" />
             <div className="flex flex-col items-start">
