@@ -5,6 +5,13 @@
   text-align: center;
 }
 
+/* Header logo alignment override */
+header .container {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 100%;
+}
+
 body {
   background-color: #1A1F2C;
   color: #E1E1E6;
