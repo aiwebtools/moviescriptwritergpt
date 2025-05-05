@@ -83,10 +83,10 @@ export default function Header() {
         </div>
       </div>
       
-      {/* Added border here, below the presented by text */}
+      {/* Only show border on desktop when not scrolled */}
       <div className={cn(
-        "w-full h-px bg-white/5 mt-1",
-        isScrolled ? "block" : "hidden md:block"
+        "w-full h-px bg-white/5",
+        "hidden md:block md:mt-1"
       )}></div>
       
       <MobileNavigation 
