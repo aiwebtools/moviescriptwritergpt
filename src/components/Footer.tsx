@@ -22,48 +22,80 @@ export default function Footer() {
             </p>
           </div>
           
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-8 md:gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
             <div>
-              <h3 className="font-semibold mb-2 md:mb-3 text-white text-sm sm:text-base">Writing Tools</h3>
-              <ul className="space-y-2">
-                <li><a href="https://chatgpt.com/g/g-35psQsJil-movie-script-writer-gpt-original-version-1" target="_blank" rel="noopener noreferrer" className="text-xs sm:text-sm text-gray-300 hover:text-script-accent transition-colors">Movie Script Writer GPT Version 1</a></li>
-                <li><a href="https://chatgpt.com/g/g-ZoZ12NUed-movie-script-writer-gpt" target="_blank" rel="noopener noreferrer" className="text-xs sm:text-sm text-gray-300 hover:text-script-accent transition-colors">Movie Script Writer Version 2</a></li>
-                <li><a href="https://moviescenemakergpt.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="text-xs sm:text-sm text-gray-300 hover:text-script-accent transition-colors">Movie Scene Maker GPT</a></li>
-                <li><a href="https://chatgpt.com/g/g-6814ab172de081918023593ce10d791d-movie-trailer-poster-gpt" target="_blank" rel="noopener noreferrer" className="text-xs sm:text-sm text-gray-300 hover:text-script-accent transition-colors">Movie Trailer Poster Maker</a></li>
-                <li><a href="https://screenplaywritergpt.lovable.app/" target="_blank" rel="noopener noreferrer" className="text-xs sm:text-sm text-gray-300 hover:text-script-accent transition-colors">ScreenPlay Writer GPT</a></li>
-                <li><a href="https://bookwritergpt.lovable.app/" target="_blank" rel="noopener noreferrer" className="text-xs sm:text-sm text-gray-300 hover:text-script-accent transition-colors">Book Writer GPT</a></li>
-                <li>
-                  <a 
-                    href="https://stagemasterai.lovable.app/" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="text-xs sm:text-sm text-gray-300 hover:text-script-accent transition-colors flex items-center"
-                  >
-                    <span className="mr-1">🎭</span> StageMaster AI Suite
-                  </a>
-                </li>
-                <li>
-                  <a 
-                    href="https://www.aiwebtools.ai" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center mt-1 px-2 py-1 sm:px-3 sm:py-1.5 bg-script-accent text-white rounded-md text-xs font-medium hover:bg-script-accent/90 transition-colors"
-                  >
-                    MORE AI TOOLS
-                  </a>
-                </li>
-              </ul>
+              <h3 className="font-semibold mb-3 md:mb-4 text-white text-sm sm:text-base">Writing Tools</h3>
+              <div className="grid grid-cols-1 gap-2.5">
+                <a 
+                  href="https://chatgpt.com/g/g-35psQsJil-movie-script-writer-gpt-original-version-1" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="px-4 py-2 rounded-md bg-gradient-to-r from-script-accent/80 to-script-accent hover:from-script-accent hover:to-script-accent/90 text-white text-xs sm:text-sm font-medium transition-all duration-300 hover:shadow-glow hover:scale-[1.02] flex items-center"
+                >
+                  <span className="mr-1.5">🎬</span> Movie Script Writer GPT V1
+                </a>
+                <a 
+                  href="https://chatgpt.com/g/g-ZoZ12NUed-movie-script-writer-gpt" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="px-4 py-2 rounded-md bg-gradient-to-r from-[#9b87f5]/90 to-[#7E69AB] hover:from-[#9b87f5] hover:to-[#7E69AB]/90 text-white text-xs sm:text-sm font-medium transition-all duration-300 hover:shadow-glow hover:scale-[1.02] flex items-center"
+                >
+                  <span className="mr-1.5">🎥</span> Movie Script Writer GPT V2
+                </a>
+                <a 
+                  href="https://moviescenemakergpt.lovable.app/?via=aiwebtools" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="px-4 py-2 rounded-md bg-gradient-to-r from-[#0EA5E9]/90 to-[#0EA5E9] hover:from-[#0EA5E9] hover:to-[#0EA5E9]/80 text-white text-xs sm:text-sm font-medium transition-all duration-300 hover:shadow-glow hover:scale-[1.02] flex items-center"
+                >
+                  <span className="mr-1.5">🎞️</span> Movie Scene Maker GPT
+                </a>
+                <a 
+                  href="https://chatgpt.com/g/g-6814ab172de081918023593ce10d791d-movie-trailer-poster-gpt" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="px-4 py-2 rounded-md bg-gradient-to-r from-[#F97316]/90 to-[#F97316] hover:from-[#F97316] hover:to-[#F97316]/80 text-white text-xs sm:text-sm font-medium transition-all duration-300 hover:shadow-glow hover:scale-[1.02] flex items-center"
+                >
+                  <span className="mr-1.5">🎭</span> Movie Trailer Poster Maker
+                </a>
+                <a 
+                  href="https://screenplaywritergpt.lovable.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="px-4 py-2 rounded-md bg-gradient-to-r from-[#D946EF]/90 to-[#D946EF] hover:from-[#D946EF] hover:to-[#D946EF]/80 text-white text-xs sm:text-sm font-medium transition-all duration-300 hover:shadow-glow hover:scale-[1.02] flex items-center"
+                >
+                  <span className="mr-1.5">📝</span> ScreenPlay Writer GPT
+                </a>
+                <a 
+                  href="https://bookwritergpt.lovable.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="px-4 py-2 rounded-md bg-gradient-to-r from-[#8B5CF6]/90 to-[#8B5CF6] hover:from-[#8B5CF6] hover:to-[#8B5CF6]/80 text-white text-xs sm:text-sm font-medium transition-all duration-300 hover:shadow-glow hover:scale-[1.02] flex items-center"
+                >
+                  <span className="mr-1.5">📕</span> Book Writer GPT
+                </a>
+                <a 
+                  href="https://stagemasterai.lovable.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="px-4 py-2 rounded-md bg-gradient-to-r from-[#6E59A5]/90 to-[#6E59A5] hover:from-[#6E59A5] hover:to-[#6E59A5]/80 text-white text-xs sm:text-sm font-medium transition-all duration-300 hover:shadow-glow hover:scale-[1.02] flex items-center"
+                >
+                  <span className="mr-1.5">🎭</span> StageMaster AI Suite
+                </a>
+              </div>
+              <div className="mt-4">
+                <a 
+                  href="https://www.aiwebtools.ai" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="inline-flex items-center px-4 py-2 bg-script-accent text-white rounded-md text-xs font-medium hover:bg-script-accent/90 transition-all duration-300 hover:shadow-glow hover:scale-[1.02] justify-center"
+                >
+                  EXPLORE MORE AI TOOLS
+                </a>
+              </div>
             </div>
             <div>
-              <h3 className="font-semibold mb-2 md:mb-3 text-white text-sm sm:text-base">Resources</h3>
-              <ul className="space-y-2">
-                <li><a href="#" target="_blank" rel="noopener noreferrer" className="text-xs sm:text-sm text-gray-300 hover:text-script-accent transition-colors">Writing Guide</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer" className="text-xs sm:text-sm text-gray-300 hover:text-script-accent transition-colors">FAQ</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer" className="text-xs sm:text-sm text-gray-300 hover:text-script-accent transition-colors">Support</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-semibold mb-2 md:mb-3 text-white text-sm sm:text-base">Company</h3>
+              <h3 className="font-semibold mb-3 md:mb-4 text-white text-sm sm:text-base">Company</h3>
               <ul className="space-y-2">
                 <li><a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="text-xs sm:text-sm text-gray-300 hover:text-script-accent transition-colors">About Us</a></li>
                 <li><a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-xs sm:text-sm text-gray-300 hover:text-script-accent transition-colors">Privacy</a></li>
