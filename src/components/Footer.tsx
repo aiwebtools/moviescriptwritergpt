@@ -77,7 +77,7 @@ export default function Footer() {
                   <span className="mr-1.5">🎭</span> Movie Trailer Poster Maker
                 </a>
                 <a 
-                  href="https://chatgpt.com/g/g-6818b77ba8948191abb42058c0a48770-music-video-maker-gpt" 
+                  href="https://musicvideomakergpt.lovable.app/?via=aiwebtools" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="px-4 py-2 rounded-md bg-gradient-to-r from-[#EC4899]/90 to-[#EC4899] hover:from-[#EC4899] hover:to-[#EC4899]/80 text-white text-xs sm:text-sm font-medium transition-all duration-300 hover:shadow-glow hover:scale-[1.02] flex items-center"

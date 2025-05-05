@@ -87,7 +87,7 @@ export default function SelectVersion() {
                 "Audio synchronization",
                 "Visual effects integration"
               ]}
-              link="https://chatgpt.com/g/g-6818b77ba8948191abb42058c0a48770-music-video-maker-gpt"
+              link="https://musicvideomakergpt.lovable.app/?via=aiwebtools"
               badgeText="Music"
               BadgeIcon={Music}
               buttonText="Use Music Video Maker GPT"
