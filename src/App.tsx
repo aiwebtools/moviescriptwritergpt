@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import SelectVersion from "./pages/SelectVersion";
 import NotFound from "./pages/NotFound";
+import FloatingButton from "./components/FloatingButton";
 
 const queryClient = new QueryClient();
 
@@ -16,6 +17,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <FloatingButton />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/select-version" element={<SelectVersion />} />
