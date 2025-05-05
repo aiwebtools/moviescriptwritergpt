@@ -1,4 +1,7 @@
 
+import { animationTools, soundTools, lipsyncTools, editingTools } from "@/data/tools";
+import AnimationSoundTools from "./header/AnimationSoundTools";
+
 export default function Footer() {
   return <footer className="bg-script-paper border-t border-white/10 py-8 md:py-12 px-4">
       <div className="container mx-auto">
@@ -22,8 +25,23 @@ export default function Footer() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
-            <div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 md:gap-12">
+            {/* Animation & Sound Tools Accordion */}
+            <div className="col-span-1">
+              <h3 className="font-semibold mb-3 md:mb-4 text-white text-sm sm:text-base">Animation & Sound Tools</h3>
+              <div className="bg-black/20 rounded-lg p-3 border border-white/5">
+                <AnimationSoundTools 
+                  animationTools={animationTools}
+                  soundTools={soundTools}
+                  lipsyncTools={lipsyncTools}
+                  editingTools={editingTools}
+                  isMobile={true}
+                  onItemClick={() => {}}
+                />
+              </div>
+            </div>
+
+            <div className="col-span-1">
               <h3 className="font-semibold mb-3 md:mb-4 text-white text-sm sm:text-base">Writing Tools</h3>
               <div className="grid grid-cols-1 gap-2.5">
                 <a 
@@ -94,6 +112,7 @@ export default function Footer() {
                 </a>
               </div>
             </div>
+            
             <div>
               <h3 className="font-semibold mb-3 md:mb-4 text-white text-sm sm:text-base">Company</h3>
               <ul className="space-y-2">
