@@ -65,9 +65,9 @@ export default function HeroSection() {
       <div className="container relative z-10 mx-auto flex flex-col items-center text-center space-y-6 md:space-y-8 max-w-4xl pt-12 sm:pt-16 md:pt-16">
         <HeroContent loaded={loaded} />
         
-        <HeroButtons loaded={loaded} isMobile={isMobile} />
-        
         <VideoPreview loaded={loaded} />
+        
+        <HeroButtons loaded={loaded} isMobile={isMobile} />
         
         <ScriptPreview 
           loaded={loaded}
