@@ -110,7 +110,7 @@ export default function SelectVersion() {
               BadgeIcon={Theater}
               buttonColor="bg-fuchsia-600 hover:bg-fuchsia-700"
               buttonShadow="shadow-[0_0_10px_#c026d3,0_0_20px_#c026d3]"
-              buttonText="Explore StageMaster for Performing Arts"
+              buttonText="🎭 StageMaster AI Suite for the Performing Arts"
             />
           </div>
           

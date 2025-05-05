@@ -23,7 +23,7 @@ const StageVersionCard = ({
   BadgeIcon,
   buttonColor = "bg-purple-600 hover:bg-purple-700",
   buttonShadow = "shadow-[0_0_10px_#8b5cf6,0_0_20px_#8b5cf6]",
-  buttonText = "Explore StageMaster for Performing Arts"
+  buttonText = "🎭 StageMaster AI Suite for the Performing Arts"
 }: StageVersionCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
 

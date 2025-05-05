@@ -98,7 +98,7 @@ export default function Footer() {
                   rel="noopener noreferrer" 
                   className="px-4 py-2 rounded-md bg-gradient-to-r from-[#6E59A5]/90 to-[#6E59A5] hover:from-[#6E59A5] hover:to-[#6E59A5]/80 text-white text-xs sm:text-sm font-medium transition-all duration-300 hover:shadow-glow hover:scale-[1.02] flex items-center"
                 >
-                  <span className="mr-1.5">🎭</span> StageMaster AI Suite
+                  <span className="mr-1.5">🎭</span> StageMaster AI Suite for the Performing Arts
                 </a>
               </div>
               <div className="mt-4">
