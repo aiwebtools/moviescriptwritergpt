@@ -93,12 +93,12 @@ export default function Footer() {
                   <span className="mr-1.5">📝</span> ScreenPlay Writer GPT
                 </a>
                 <a 
-                  href="https://bookwritergpt.lovable.app/" 
+                  href="https://chatgpt.com/g/g-681a201fe69c8191b99e1636be90139e-commercial-scene-maker-gpt" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="px-4 py-2 rounded-md bg-gradient-to-r from-[#8B5CF6]/90 to-[#8B5CF6] hover:from-[#8B5CF6] hover:to-[#8B5CF6]/80 text-white text-xs sm:text-sm font-medium transition-all duration-300 hover:shadow-glow hover:scale-[1.02] flex items-center"
                 >
-                  <span className="mr-1.5">📕</span> Book Writer GPT
+                  <span className="mr-1.5">🎥</span> Commercial Scene Maker GPT
                 </a>
                 <a 
                   href="https://stagemasterai.lovable.app/" 
