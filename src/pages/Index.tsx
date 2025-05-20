@@ -12,6 +12,9 @@ const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    // Update document title for better SEO
+    document.title = "Movie Script Writer & AI Filmmaking Tools | AI Web Tools";
+    
     // Simulate loading to ensure smooth transitions
     const timer = setTimeout(() => {
       setIsLoading(false);
