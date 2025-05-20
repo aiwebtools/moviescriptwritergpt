@@ -11,6 +11,9 @@ export default function SelectVersion() {
   useEffect(() => {
     // Scroll to top when component mounts
     window.scrollTo(0, 0);
+    
+    // Update document title for better SEO
+    document.title = "Select Movie Script Writer Version | AI Filmmaking Tools";
   }, []);
   
   return (

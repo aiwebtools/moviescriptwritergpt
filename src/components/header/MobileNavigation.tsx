@@ -64,7 +64,7 @@ export default function MobileNavigation({
           )}
         </Link>
         
-        <Link to="/select-version" target="_blank" rel="noopener noreferrer" onClick={onToggleMenu} className="animate-fade-in" style={{animationDelay: '50ms'}}>
+        <Link to="/select-version" onClick={onToggleMenu} className="animate-fade-in" style={{animationDelay: '50ms'}}>
           <Button 
             size="sm" 
             variant="default" 

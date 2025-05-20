@@ -40,6 +40,9 @@ export default function DisclaimerDialog() {
             <p className="mb-3">
               You, the user, own all rights to the movie scripts generated entirely through this service.
             </p>
+            <p className="mb-3">
+              <strong>Usage:</strong> Unrestricted usage is available to ChatGPT Plus subscribers. Free ChatGPT accounts have limited interactions based on OpenAI's usage policies.
+            </p>
             <p className="font-semibold">
               By clicking "I Agree" below, you acknowledge these terms and conditions.
             </p>

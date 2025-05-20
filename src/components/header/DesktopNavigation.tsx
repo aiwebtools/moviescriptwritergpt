@@ -41,7 +41,7 @@ export default function DesktopNavigation({ animationTools, soundTools, lipsyncT
         )}
       </Link>
       
-      <Link to="/select-version" target="_blank" rel="noopener noreferrer">
+      <Link to="/select-version">
         <Button 
           size="sm" 
           variant="default" 
