@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Home, ExternalLink, ChevronDown, Film } from "lucide-react";
@@ -47,22 +46,19 @@ export default function MobileNavigation({
         : "max-h-0 animate-fade-out"
     )}>
       <div className="container mx-auto px-4 flex flex-col space-y-4 pb-4">
-        <Link 
-          to="/" 
+        <a 
+          href="https://moviemakerstudio.lovable.app/?via=aiwebtools"
+          target="_blank"
+          rel="noopener noreferrer"
           className={cn(
             "flex items-center text-sm font-medium py-2 transition-all duration-200 hover:translate-x-1",
-            isActiveRoute("/") 
-              ? "text-script-accent" 
-              : "text-gray-300 hover:text-script-accent"
+            "text-gray-300 hover:text-script-accent"
           )}
           onClick={onToggleMenu}
         >
-          <Home className={cn("h-4 w-4 mr-1", isActiveRoute("/") && "text-script-accent")} />
-          Home
-          {isActiveRoute("/") && (
-            <span className="ml-auto h-1.5 w-1.5 rounded-full bg-script-accent animate-pulse" />
-          )}
-        </Link>
+          <Home className="h-4 w-4 mr-1" />
+          Movie Maker Studio Suite
+        </a>
         
         <Link to="/select-version" onClick={onToggleMenu} className="animate-fade-in" style={{animationDelay: '50ms'}}>
           <Button 

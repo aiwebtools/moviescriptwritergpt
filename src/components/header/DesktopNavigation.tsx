@@ -1,4 +1,3 @@
-
 import { Home, ExternalLink, ChevronDown, Film } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -25,21 +24,18 @@ export default function DesktopNavigation({ animationTools, soundTools, lipsyncT
   
   return (
     <nav className="flex items-center justify-between space-x-4 lg:space-x-6">
-      <Link 
-        to="/" 
+      <a 
+        href="https://moviemakerstudio.lovable.app/?via=aiwebtools"
+        target="_blank"
+        rel="noopener noreferrer"
         className={cn(
           "flex items-center justify-center w-9 h-9 relative rounded-md transition-all duration-200",
-          isActiveRoute("/") 
-            ? "text-script-accent bg-white/5" 
-            : "text-gray-300 hover:text-script-accent hover:bg-white/5"
+          "text-gray-300 hover:text-script-accent hover:bg-white/5"
         )}
-        title="Home"
+        title="Movie Maker Studio Suite"
       >
-        <Home className={cn("h-5 w-5", isActiveRoute("/") && "text-script-accent")} />
-        {isActiveRoute("/") && (
-          <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-script-accent"></span>
-        )}
-      </Link>
+        <Home className="h-5 w-5" />
+      </a>
       
       <Link to="/select-version">
         <Button 
