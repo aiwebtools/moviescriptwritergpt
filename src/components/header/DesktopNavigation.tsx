@@ -43,12 +43,13 @@ export default function DesktopNavigation({ animationTools, soundTools, lipsyncT
         target="_blank"
         rel="noopener noreferrer"
         className={cn(
-          "flex items-center text-sm font-medium transition-all duration-200",
-          "text-gray-300 hover:text-script-accent hover:bg-white/5 px-2 py-1.5 rounded-md border border-white/10"
+          "flex items-center h-9 px-4 text-sm font-medium transition-all duration-200 rounded-md",
+          "text-gray-300 hover:text-white bg-white/5 hover:bg-white/10",
+          "border border-white/10 hover:border-white/20"
         )}
         title="Back to Movie Maker Studio Home"
       >
-        <Home className="h-4 w-4 mr-1" />
+        <Home className="h-4 w-4 mr-2" />
         BACK TO MOVIE MAKER STUDIO HOME
       </a>
       
