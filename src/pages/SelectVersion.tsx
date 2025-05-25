@@ -26,25 +26,7 @@ export default function SelectVersion() {
           
           {/* Modified grid layout with better desktop sizing */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto">
-            {/* Version 2 Card - Now First */}
-            <VersionCard
-              title="Movie Script Writer Version 2"
-              description="Same great screenplay writing capabilities as Version 1, but with automatic DOCX export functionality built-in."
-              features={[
-                "Advanced narrative techniques",
-                "Complex character arcs",
-                "Enhanced dialogue writing",
-                "Automatic DOCX export"
-              ]}
-              link="https://chatgpt.com/g/g-ZoZ12NUed-movie-script-writer-gpt"
-              badgeText="Enhanced"
-              BadgeIcon={Zap}
-              buttonText="Select Movie Script Writer Version 2"
-              buttonColor="bg-blue-600 hover:bg-blue-700"
-              buttonShadow="shadow-[0_0_10px_#3b82f6,0_0_20px_#3b82f6]"
-            />
-            
-            {/* Version 1 Card - Now Second */}
+            {/* Version 1 Card */}
             <VersionCard
               title="Movie Script Writer Version 1"
               description="The classic experience with all the essential features to create professional screenplays. Export to DOCX available upon request."
@@ -60,6 +42,24 @@ export default function SelectVersion() {
               buttonText="Select Movie Script Writer Version 1"
               buttonColor="bg-purple-600 hover:bg-purple-700"
               buttonShadow="shadow-[0_0_10px_#8b5cf6,0_0_20px_#8b5cf6]"
+            />
+            
+            {/* Version 2 Card */}
+            <VersionCard
+              title="Movie Script Writer Version 2"
+              description="Same great screenplay writing capabilities as Version 1, but with automatic DOCX export functionality built-in."
+              features={[
+                "Advanced narrative techniques",
+                "Complex character arcs",
+                "Enhanced dialogue writing",
+                "Automatic DOCX export"
+              ]}
+              link="https://chatgpt.com/g/g-ZoZ12NUed-movie-script-writer-gpt"
+              badgeText="Enhanced"
+              BadgeIcon={Zap}
+              buttonText="Select Movie Script Writer Version 2"
+              buttonColor="bg-blue-600 hover:bg-blue-700"
+              buttonShadow="shadow-[0_0_10px_#3b82f6,0_0_20px_#3b82f6]"
             />
             
             {/* Movie Scene Maker GPT Card */}
