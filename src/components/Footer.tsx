@@ -1,4 +1,3 @@
-
 import { animationTools, soundTools, lipsyncTools, editingTools } from "@/data/tools";
 import AnimationSoundTools from "./header/AnimationSoundTools";
 
@@ -24,7 +23,7 @@ export default function Footer() {
               The ultimate AI assistant for creating industry-standard movie scripts from concept to final draft.
             </p>
             <p className="text-xs text-gray-400 mt-2 max-w-md">
-              For informational, educational and research purposes only.
+              <strong className="text-script-accent">Disclaimer:</strong> This tool is for informational, educational and research purposes only.
             </p>
           </div>
           
