@@ -47,8 +47,8 @@ const Index = () => {
       </main>
       <Footer />
       
-      {/* Disclaimer Notice */}
-      <div className="fixed bottom-4 left-4 right-4 md:left-auto md:right-4 md:w-80 bg-script-bg/90 backdrop-blur-sm border border-white/10 rounded-lg p-3 text-xs text-gray-400 z-40">
+      {/* Disclaimer Notice - positioned to avoid floating button */}
+      <div className="fixed bottom-4 left-4 right-4 md:left-4 md:right-auto md:w-80 bg-script-bg/90 backdrop-blur-sm border border-white/10 rounded-lg p-3 text-xs text-gray-400 z-40">
         <p className="mb-2">
           <strong className="text-script-accent">Disclaimer:</strong> This tool is for informational, educational and research purposes only.
         </p>
