@@ -48,7 +48,8 @@ export const VideoPreview = ({ loaded }: VideoPreviewProps) => {
   // Detect device capabilities for optimal video quality
   const getOptimalVideoParams = () => {
     const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    const isSlowConnection = navigator.connection && (navigator.connection as any).effectiveType === 'slow-2g';
+    const connection = (navigator as any).connection || (navigator as any).mozConnection || (navigator as any).webkitConnection;
+    const isSlowConnection = connection && connection.effectiveType === 'slow-2g';
     
     let quality = 'hd1080';
     if (isMobile || isSlowConnection) {

@@ -46,6 +46,21 @@ const Index = () => {
         <ExampleSection />
       </main>
       <Footer />
+      
+      {/* Disclaimer Notice */}
+      <div className="fixed bottom-4 left-4 right-4 md:left-auto md:right-4 md:w-80 bg-script-bg/90 backdrop-blur-sm border border-white/10 rounded-lg p-3 text-xs text-gray-400 z-40">
+        <p className="mb-2">
+          <strong className="text-script-accent">Disclaimer:</strong> This tool is for informational, educational and research purposes only.
+        </p>
+        <a 
+          href="https://aiwebtools.lovable.app/disclaimers" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-script-accent hover:text-script-accent/80 underline"
+        >
+          View Full Terms & Disclaimers
+        </a>
+      </div>
     </div>
   );
 }

@@ -23,6 +23,9 @@ export default function Footer() {
             <p className="text-xs sm:text-sm text-script-muted mt-2 max-w-md">
               The ultimate AI assistant for creating industry-standard movie scripts from concept to final draft.
             </p>
+            <p className="text-xs text-gray-400 mt-2 max-w-md">
+              For informational, educational and research purposes only.
+            </p>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 md:gap-12">
@@ -126,7 +129,7 @@ export default function Footer() {
               <ul className="space-y-2">
                 <li><a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="text-xs sm:text-sm text-gray-300 hover:text-script-accent transition-colors">About Us</a></li>
                 <li><a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-xs sm:text-sm text-gray-300 hover:text-script-accent transition-colors">Privacy</a></li>
-                <li><a href="https://aiwebtools.ai/terms-of-services" target="_blank" rel="noopener noreferrer" className="text-xs sm:text-sm text-gray-300 hover:text-script-accent transition-colors">Terms</a></li>
+                <li><a href="https://aiwebtools.lovable.app/disclaimers" target="_blank" rel="noopener noreferrer" className="text-xs sm:text-sm text-gray-300 hover:text-script-accent transition-colors">Terms & Disclaimers</a></li>
               </ul>
             </div>
           </div>
