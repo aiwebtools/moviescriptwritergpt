@@ -12,8 +12,14 @@ const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Update document title for better SEO
-    document.title = "Movie Script Writer & AI Filmmaking Tools | AI Web Tools";
+    // Enhanced SEO title with target keywords
+    document.title = "Free AI Tools | Movie Script Writer & AI Filmmaking Tools | AI Web Tools";
+    
+    // Add meta description dynamically
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Free AI tools for filmmaking! Create professional movie scripts, scenes, trailers & posters with our AI-powered suite. Movie Script Writer GPT, Scene Maker & more AI tools from AI Web Tools.');
+    }
     
     // Simulate loading to ensure smooth transitions
     const timer = setTimeout(() => {
@@ -28,7 +34,7 @@ const Index = () => {
       <div className="min-h-screen flex items-center justify-center">
         <div className="animate-pulse">
           <span className="text-2xl font-bold font-display tracking-tight">
-            Script<span className="text-script-accent">Writer</span>
+            AI Web <span className="text-script-accent">Tools</span>
           </span>
         </div>
       </div>
@@ -40,6 +46,11 @@ const Index = () => {
       <DisclaimerDialog />
       <Header />
       <main>
+        {/* Hidden SEO content for better keyword targeting */}
+        <div className="sr-only">
+          <h1>Free AI Tools for Content Creation and Filmmaking</h1>
+          <p>AI Web Tools offers the best free AI tools including Movie Script Writer GPT, AI Scene Maker, AI Video Tools, and more artificial intelligence tools for creators.</p>
+        </div>
         <HeroSection />
         <FeaturesSection />
         <ProcessSection />

@@ -1,0 +1,36 @@
+
+{
+  "name": "AI Web Tools - Free AI Filmmaking Tools",
+  "short_name": "AI Web Tools",
+  "description": "Free AI tools for filmmaking including Movie Script Writer GPT, Scene Maker, and AI-powered content creation tools",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#1e40af",
+  "orientation": "portrait-primary",
+  "categories": ["entertainment", "productivity", "utilities"],
+  "lang": "en",
+  "icons": [
+    {
+      "src": "https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=192&auto=format&fit=crop",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=512&auto=format&fit=crop",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "keywords": ["ai tools", "free ai tools", "movie script writer", "ai filmmaking", "ai web tools"],
+  "screenshots": [
+    {
+      "src": "https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1280&auto=format&fit=crop",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "label": "AI Web Tools Homepage"
+    }
+  ]
+}

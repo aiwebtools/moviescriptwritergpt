@@ -1,0 +1,10 @@
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+Sitemap: https://moviescriptwritergpt.lovable.app/sitemap.xml
+
+# AI Web Tools - Free AI Filmmaking Tools
+# Movie Script Writer GPT, Scene Maker, and more AI tools
