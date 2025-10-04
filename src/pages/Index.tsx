@@ -13,12 +13,12 @@ const Index = () => {
 
   useEffect(() => {
     // Enhanced SEO title with target keywords
-    document.title = "Free AI Tools | Movie Script Writer & AI Filmmaking Tools | AI Web Tools";
+    document.title = "Movie Script Writer & AI Filmmaking Tools - Free AI Tools";
     
     // Add meta description dynamically
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Free AI tools for filmmaking! Create professional movie scripts, scenes, trailers & posters with our AI-powered suite. Movie Script Writer GPT, Scene Maker & more AI tools from AI Web Tools.');
+      metaDescription.setAttribute('content', 'Create professional movie scripts, scenes, trailers & posters with FREE AI tools. Movie Script Writer GPT, AI Scene Maker, Trailer Generator & Poster Creator - Professional filmmaking tools by AI Web Tools.');
     }
     
     // Simulate loading to ensure smooth transitions
