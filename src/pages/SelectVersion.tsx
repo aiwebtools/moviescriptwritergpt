@@ -1,19 +1,29 @@
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import VersionCard from '@/components/VersionCard';
 import StageVersionCard from '@/components/StageVersionCard';
 import VersionPageHeader from '@/components/VersionPageHeader';
-import { Sparkles, Zap, Theater, Camera, Film, Music } from "lucide-react";
+import { Sparkles, Zap, Theater, Camera, Film, Music, Trophy, ExternalLink } from "lucide-react";
+import { format } from 'date-fns';
 
 export default function SelectVersion() {
+  const [currentDate, setCurrentDate] = useState(format(new Date(), 'MMMM d, yyyy'));
+
   useEffect(() => {
     // Scroll to top when component mounts
     window.scrollTo(0, 0);
     
     // Update document title for better SEO
     document.title = "Select Movie Script Writer Version | AI Filmmaking Tools";
+
+    // Update date (in case component stays mounted across midnight)
+    const interval = setInterval(() => {
+      setCurrentDate(format(new Date(), 'MMMM d, yyyy'));
+    }, 60000);
+
+    return () => clearInterval(interval);
   }, []);
   
   return (
@@ -23,6 +33,63 @@ export default function SelectVersion() {
       <main className="pt-32 pb-20 px-4">
         <div className="container mx-auto max-w-7xl">
           <VersionPageHeader />
+
+          {/* Top Rated Video Generation Tools Section */}
+          <div className="mb-12 p-6 bg-gradient-to-r from-amber-500/10 via-yellow-500/5 to-amber-500/10 border border-amber-500/30 rounded-xl relative overflow-hidden">
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-400/10 via-transparent to-transparent animate-pulse"></div>
+            <div className="relative z-10">
+              <div className="flex items-center gap-3 mb-4">
+                <Trophy className="h-8 w-8 text-amber-400 animate-bounce" style={{ animationDuration: '2s' }} />
+                <h2 className="text-2xl font-bold text-amber-400" style={{ textShadow: '0 0 20px rgba(251, 191, 36, 0.5)' }}>
+                  Best Video Generation Platforms
+                </h2>
+                <span className="text-sm text-amber-300/80 bg-amber-500/20 px-3 py-1 rounded-full">
+                  Voted #{`1`} as of {currentDate}
+                </span>
+              </div>
+              <p className="text-gray-300 mb-6">
+                These all-in-one tools combine video generation AND sound in a single step, eliminating multiple stages of the creation process. 
+                Use our GPTs to write your script, then go directly to generation!
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <a 
+                  href="https://www.sora.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 p-4 bg-black/40 border border-amber-500/40 rounded-lg hover:bg-amber-500/10 hover:border-amber-400 transition-all duration-300 group"
+                  style={{ boxShadow: '0 0 15px rgba(251, 191, 36, 0.2)' }}
+                >
+                  <div className="h-12 w-12 rounded-full bg-amber-500/20 flex items-center justify-center">
+                    <Trophy className="h-6 w-6 text-amber-400" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-lg font-bold text-amber-400 group-hover:text-amber-300">SORA 2</h3>
+                    <p className="text-sm text-gray-400">OpenAI's latest video generation with integrated sound</p>
+                  </div>
+                  <ExternalLink className="h-5 w-5 text-amber-400/50 group-hover:text-amber-400" />
+                </a>
+                <a 
+                  href="https://aistudio.google.com/generate-video" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 p-4 bg-black/40 border border-amber-500/40 rounded-lg hover:bg-amber-500/10 hover:border-amber-400 transition-all duration-300 group"
+                  style={{ boxShadow: '0 0 15px rgba(251, 191, 36, 0.2)' }}
+                >
+                  <div className="h-12 w-12 rounded-full bg-amber-500/20 flex items-center justify-center">
+                    <Trophy className="h-6 w-6 text-amber-400" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-lg font-bold text-amber-400 group-hover:text-amber-300">Google Veo 3</h3>
+                    <p className="text-sm text-gray-400">Google's powerful video + audio generation platform</p>
+                  </div>
+                  <ExternalLink className="h-5 w-5 text-amber-400/50 group-hover:text-amber-400" />
+                </a>
+              </div>
+              <p className="text-xs text-amber-300/60 mt-4 italic">
+                * Manual editing may still be required for final production
+              </p>
+            </div>
+          </div>
           
           {/* Modified grid layout with better desktop sizing */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 mx-auto">
