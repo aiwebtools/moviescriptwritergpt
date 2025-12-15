@@ -2,11 +2,13 @@
 export interface Tool {
   name: string;
   url: string;
+  isTopRated?: boolean;
+  badge?: string;
 }
 
 export const animationTools: Tool[] = [
-  { name: "SORA", url: "https://www.sora.com" },
-  { name: "Google Veo 2", url: "https://aistudio.google.com/generate-video" },
+  { name: "SORA 2", url: "https://www.sora.com", isTopRated: true, badge: "🏆 Video + Sound" },
+  { name: "Google Veo 3", url: "https://aistudio.google.com/generate-video", isTopRated: true, badge: "🏆 Video + Sound" },
   { name: "KLING", url: "https://klingai.com" },
   { name: "HAILUO", url: "https://hailuoai.video/" },
   { name: "Higgsfield", url: "https://higgsfield.ai/" },
@@ -22,6 +24,8 @@ export const soundTools: Tool[] = [
 ];
 
 export const lipsyncTools: Tool[] = [
+  { name: "SORA 2", url: "https://www.sora.com", isTopRated: true, badge: "🏆 Video + Sound" },
+  { name: "Google Veo 3", url: "https://aistudio.google.com/generate-video", isTopRated: true, badge: "🏆 Video + Sound" },
   { name: "Hedra", url: "https://www.hedra.com/" },
   { name: "VEO FLOW", url: "https://labs.google/fx/tools/flow" },
   { name: "⭐ VEO 3 PROMPT Generator", url: "https://chatgpt.com/g/g-682faef24c608191808180e89719cb09-veo3-text-to-video-prompt-maker" },
