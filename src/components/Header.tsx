@@ -49,7 +49,7 @@ export default function Header() {
                 Movie Script Writer <span className="text-script-accent group-hover:animate-pulse-glow">GPT</span>
               </span>
               <a 
-                href="https://www.aiwebtools.ai" 
+                href="https://aiwebtools.lovable.app/?via=aiwebtools" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-xs text-gray-400 hover:text-script-accent transition-colors"
