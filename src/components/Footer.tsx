@@ -113,7 +113,7 @@ export default function Footer() {
               </div>
               <div className="mt-4">
                 <a 
-                  href="https://www.aiwebtools.ai" 
+                  href="https://aiwebtools.lovable.app/?via=aiwebtools" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="inline-flex items-center px-4 py-2 bg-script-accent text-white rounded-md text-xs font-medium hover:bg-script-accent/90 transition-all duration-300 hover:shadow-glow hover:scale-[1.02] justify-center"
