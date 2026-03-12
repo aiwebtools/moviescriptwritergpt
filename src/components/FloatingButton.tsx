@@ -34,7 +34,7 @@ export default function FloatingButton() {
       )}
     >
       <a 
-        href="https://aiwebtools.ai" 
+        href="https://aiwebtools.lovable.app/?via=aiwebtools" 
         target="_blank" 
         rel="noopener noreferrer"
       >

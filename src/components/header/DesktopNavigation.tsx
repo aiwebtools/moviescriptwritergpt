@@ -114,7 +114,7 @@ export default function DesktopNavigation({ animationTools, soundTools, lipsyncT
       </a>
       
       <a 
-        href="https://www.aiwebtools.ai" 
+        href="https://aiwebtools.lovable.app/?via=aiwebtools" 
         target="_blank" 
         rel="noopener noreferrer" 
         className="flex items-center text-sm font-medium text-gray-300 hover:text-script-accent px-2 py-1.5 rounded-md hover:bg-white/5 transition-all duration-200"

@@ -11,7 +11,7 @@ export default function Footer() {
                 Movie Script Writer <span className="text-script-accent group-hover:animate-pulse-glow">GPT</span>
               </span>
               <a 
-                href="https://www.aiwebtools.ai" 
+                href="https://aiwebtools.lovable.app/?via=aiwebtools" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-xs text-gray-400 hover:text-script-accent transition-colors"
@@ -113,7 +113,7 @@ export default function Footer() {
               </div>
               <div className="mt-4">
                 <a 
-                  href="https://www.aiwebtools.ai" 
+                  href="https://aiwebtools.lovable.app/?via=aiwebtools" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="inline-flex items-center px-4 py-2 bg-script-accent text-white rounded-md text-xs font-medium hover:bg-script-accent/90 transition-all duration-300 hover:shadow-glow hover:scale-[1.02] justify-center"
@@ -126,7 +126,7 @@ export default function Footer() {
             <div>
               <h3 className="font-semibold mb-3 md:mb-4 text-white text-sm sm:text-base">Company</h3>
               <ul className="space-y-2">
-                <li><a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="text-xs sm:text-sm text-gray-300 hover:text-script-accent transition-colors">About Us</a></li>
+                <li><a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="text-xs sm:text-sm text-gray-300 hover:text-script-accent transition-colors">About Us</a></li>
                 <li><a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-xs sm:text-sm text-gray-300 hover:text-script-accent transition-colors">Privacy</a></li>
                 <li><a href="https://aiwebtools.lovable.app/disclaimers" target="_blank" rel="noopener noreferrer" className="text-xs sm:text-sm text-gray-300 hover:text-script-accent transition-colors">Terms & Disclaimers</a></li>
               </ul>
