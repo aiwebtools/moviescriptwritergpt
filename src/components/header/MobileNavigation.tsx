@@ -149,7 +149,7 @@ export default function MobileNavigation({
         </a>
         
         <a 
-          href="https://www.aiwebtools.ai" 
+          href="https://aiwebtools.lovable.app/?via=aiwebtools" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="flex items-center text-sm font-medium py-2 text-gray-300 hover:text-script-accent transition-all duration-200 hover:translate-x-1 animate-fade-in"
